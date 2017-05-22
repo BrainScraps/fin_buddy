@@ -15,3 +15,6 @@
 //= require materialize-sprockets
 //= require turbolinks
 //= require_tree .
+$('.info dd').each(function() {
+  $(this).css({width: $(this).text()+'%'});
+});
