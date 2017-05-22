@@ -6,4 +6,8 @@ class HomeController < ApplicationController
 
     end
 
+    def set_goals
+
+    end
+
 end
