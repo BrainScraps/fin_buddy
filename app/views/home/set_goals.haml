@@ -1,25 +1,32 @@
-.form-container{style: 'text-align: center;'} 
-    .form-background
-        .row
-        %form.col.s12
-            .row
-            .input-field.col.s6
-                %input#first_name.validate{:type => "text"}/
-                %label{:for => "first_name"} First Name
-            .input-field.col.s6
-                %input#last_name.validate{:type => "text"}/
-                %label{:for => "last_name"} Last Name
-            .row
-            .input-field.col.s12
-                %input#password.validate{:type => "password"}/
-                %label{:for => "password"} Password
-            .row
-            .input-field.col.s12
-                %input#email.validate{:type => "email"}/
-                %label{:for => "email"} Email
-            .row
-            .col.s12
-                This is an inline input field:
-                .input-field.inline
-                %input#email.validate{:type => "email"}/
-                %label{"data-error" => "wrong", "data-success" => "right", :for => "email"} Email
+-# .form-container{style: 'text-align: center;'} 
+-#     .form-background
+-#         .row
+%form.col.s12{style: 'background: #FFF;'}
+    .row
+        .input-field.col.s6
+            %input#first_name.validate{:type => "text"}/
+            %label{:for => "first_name"} First Name
+        .input-field.col.s6
+            %input#last_name.validate{:type => "text"}/
+            %label{:for => "last_name"} Last Name
+    .row
+        .input-field.col.s12
+            %input#password.validate{:type => "password"}/
+            %label{:for => "password"} Password
+    .row
+        .input-field.col.s12
+            %input#email.validate{:type => "email"}/
+            %label{:for => "email"} Email
+    .row
+        .input-field.col.s6
+            %input#bank-account-num.validate{:type => "text"}/
+            %label{:for => "bank-account-num"} Bank Account Number
+        .input-field.col.s6
+            %input#bank-routing.validate{:type => "text"}/
+            %label{:for => "bank-routing"} Bank Routing Number
+    .row
+        .col.s12
+            This is an inline input field:
+            .input-field.inline
+            %input#email.validate{:type => "email"}/
+            %label{"data-error" => "wrong", "data-success" => "right", :for => "email"} Email
